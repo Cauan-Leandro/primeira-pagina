@@ -1,17 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 * {
     margin: 10px;
     padding: 10px;
 }
-
 body {
-    background-color: #ff00f2c4;
+    background-color: #7f0d83d2;
     color: black;
     text-align: center;
-    font-family: monospace;
 }
-
+.apresentacao {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
 strong {
-    color: #ecf016;
+    color: #16e1f0;
     font-weight: bold;
     font-size: larger;
 }
@@ -19,6 +29,10 @@ strong {
     color: #000000d2;
     font-weight: bold;
     font-size: larger;
+    font-family: "Press Start 2P", system-ui;
+  font-weight: 300;
+  font-style: normal;
+    
 }
 .titulo {
     color: #5216F0;
@@ -27,6 +41,7 @@ strong {
     color: #0400ff;
     font-weight: bold;
     font-size: larger;
+    
 }
 .eu-sjj {
     height: 400px;
@@ -35,8 +50,21 @@ strong {
     padding: 0 0 0 0;
 }
 
-.principal {
+.apresentacao_sobre {
+    width: 600px ;
+}
+.apresentacao_links {
     display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
+    justify-content: space-between;
+}
+.apresentacao_links_links {
+    background-color: 442BA8;
+    color: #fdfdfd;
+    width: 200px;
+    text-align: center;
+    border-radius: 15px;
+    font-size: larger;
+    font-weight: 600;
+    padding: 22px 0;
+    text-decoration: none;
 }
