@@ -30,6 +30,7 @@ strong {
 
 .sobre-mim {
     justify-content: center;
+    text-align: left;
     color: #000000;
     font-weight: bold;
     font-size: larger;
@@ -44,7 +45,7 @@ strong {
 }
 
 .jornada-programacao {
-    flex-direction: column;
+    text-align: left;
     color: #000000;
     font-weight: bold;
     font-size: larger;
