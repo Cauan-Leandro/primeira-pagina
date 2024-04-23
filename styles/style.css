@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 :root {
-    --cor-primaria: #a12471d2;
-    --cor-secundaria: #7a369957;
+    --cor-primaria: #5622aad2;
+    --cor-secundaria: #950ed39c;
 }
 
 * {
@@ -20,12 +20,13 @@ body {
     font-family: "Press Start 2P", system-ui;
 }
 
-.cabecalho {
-    padding: 2% 0 0 0;    
+.cabecalho {   
     background-color:  var(--cor-primaria);
+    
 }
 
 .cabecalho_menu {
+    padding-top: 15px;
     display: flex;
     justify-content: space-around;
     margin: 20px;
