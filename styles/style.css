@@ -1,41 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
+:root {
+    --cor-primaria: #a12471d2;
+    --cor-secundaria: #7a369957;
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    display: block;
-    background-color: #830d56d2;
-    color: black;
+    background-color: var(--cor-secundaria);
+    color: #fffbfb;
     text-align: center;
     box-sizing: border-box;
     font-family: "Press Start 2P", system-ui;
-    font-weight: 400;
-    font-style: normal;
 }
 
 .cabecalho {
-    padding: 2% 0 0 0;
-    color: #fdfdfd;
-    background-color: #640eb4;
+    padding: 2% 0 0 0;    
+    background-color:  var(--cor-primaria);
 }
 
 .cabecalho_menu {
     display: flex;
     justify-content: space-around;
-    padding: 15;
-    gap: 80px;
+    margin: 20px;
+    gap: 15px;
+}
+.cabecalho_menu_link {
+    text-decoration: none;
+    color: #fdfdfd;
 }
 
 .apresentacao {
     justify-content: center;
     flex-direction: column;
     display: flex;
-    height: 100vh;
     align-items: center;
-    gap: 15px;
+    gap: 30px;
 }
 
 strong {
@@ -44,10 +48,18 @@ strong {
     font-size: larger;
 }
 
+.apresentacao_sobre {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
 .sobre-mim {
     justify-content: center;
     text-align: left;
-    color: #000000;
+    color: #fdfdfd;
     font-weight: bold;
     font-size: larger;
     font-family: "Press Start 2P", system-ui;
@@ -57,29 +69,22 @@ strong {
 }
 
 .titulo {
-    color: #5216F0;
+    color: var(--cor-terciaria);
 }
 
 .jornada-programacao {
     text-align: left;
-    color: #000000;
+    color: #fdfdfd;
     font-weight: bold;
     font-size: larger;
 
 }
 
 .eu-sjj {
-    height: 400px;
-    border: solid #4a0681d2 20px;
+    height: 300px;
+    border: solid var(--cor-primaria) 20px;
     border-radius: 50px;
     padding: 0 0 0 0;
-}
-
-.apresentacao_sobre {
-    width: 600px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .apresentacao_links {
@@ -93,7 +98,6 @@ strong {
     background-color: 442BA8;
     color: #fdfdfd;
     width: 200px;
-    text-align: center;
     border-radius: 15px;
     font-size: larger;
     font-weight: 600;
@@ -111,20 +115,38 @@ strong {
 }
 
 a:hover {
-    background-color: #640eb4;
+    background-color: var(--cor-primaria);
 }
 
 .rodape {
-    font-size: 24px;
-    font-weight: 400;
-    text-align: center;
     padding: 24px;
-    color: #000000;
-    background-color: #5216F0;
+    color: #fdfdfd;
+    background-color: var(--cor-primaria);
+    padding: 30px;
+    margin: 10px;
 }
 
 .apresentacao_links {
     display: flex;
-    gap: 25px;
     justify-content: space-between;
+    gap: 15px;
+}
+
+@media (max-width: 150px) {
+    .eu-sjj {
+        width: 50%;
+    }
+    .apresentacao_sobre {
+        width: 50%;
+    }
+}
+@media (max-width: 720px) {
+    .eu-sjj {
+        width: 300px;
+    }
+    
+}
+.texto_eu {
+    
+    
 }
