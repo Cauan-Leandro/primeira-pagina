@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 :root {
-    --cor-primaria: #5622aad2;
-    --cor-secundaria: #950ed39c;
+    --cor-primaria: #3616add2;
+    --cor-secundaria: #3d3fd89c;
 }
 
 * {
@@ -11,18 +11,22 @@
 }
 
 body {
-
-    flex-direction: column;
-    background-color: var(--cor-secundaria);
+    background-image: url(/assets/nuvenss.jpg);
     color: #fffbfb;
     text-align: center;
     box-sizing: border-box;
     font-family: "Press Start 2P", system-ui;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+
 }
 
-.cabecalho {   
-    background-color:  var(--cor-primaria);
-    
+.cabecalho {
+    background-color: var(--cor-primaria);
+    padding: 10px;
+    width: 100%;
 }
 
 .cabecalho_menu {
@@ -32,9 +36,19 @@ body {
     margin: 20px;
     gap: 15px;
 }
+
 .cabecalho_menu_link {
     text-decoration: none;
     color: #fdfdfd;
+}
+
+.texto_eu {
+    flex-direction: column;
+    display: flex;
+    gap: 30px;
+    font-size: large;
+    width: 80%;
+    align-items: center;
 }
 
 .apresentacao {
@@ -78,16 +92,14 @@ strong {
 .jornada-programacao {
     text-align: left;
     color: #fdfdfd;
-    font-weight: bold;
     font-size: larger;
 
 }
 
 .eu-sjj {
     width: 300px;
-    border: solid var(--cor-primaria) 20px;
-    border-radius: 50px;
-    padding: 0 0 0 0;
+    border: solid var(--cor-primaria) 10px;
+    border-radius: 30px;
 }
 
 .apresentacao_links {
@@ -122,13 +134,13 @@ a:hover {
 }
 
 .rodape {
-    display: flex;
     justify-content: space-between;
     color: #fdfdfd;
     background-color: var(--cor-primaria);
     padding: 30px;
     margin-top: 30px;
- 
+    width: 100%;
+
 }
 
 .apresentacao_links {
@@ -141,6 +153,7 @@ a:hover {
     .eu-sjj {
         width: 95%;
     }
+
     .apresentacao_sobre {
         width: 90%;
         flex-direction: column;
@@ -148,5 +161,19 @@ a:hover {
     }
 }
 
+.sobre_eu {
 
-
+        flex-direction: column;
+        display: flex;
+        gap: 30px;
+        font-size: medium;
+        justify-content: space-between;
+        align-items: center;
+}
+    
+.eu_sjj3 {
+    width: 300px;
+    border: solid var(--cor-primaria) 10px;
+    border-radius: 30px;
+    gap: 15px;
+}
