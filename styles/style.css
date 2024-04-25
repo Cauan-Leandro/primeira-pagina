@@ -24,9 +24,9 @@ body {
 }
 
 .cabecalho {
-    display: flex;
-    justify-content: space-between    
-
+    background-image: url(/assets/nuvenss.jpg);
+    padding: 2%;
+    color: #fffbfb;    
 }
 
 .cabecalho_menu_link {
