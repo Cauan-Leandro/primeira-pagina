@@ -177,3 +177,8 @@ a:hover {
     border-radius: 30px;
     gap: 15px;
 }
+.gatobotao {
+    background-color: var(--cor-primaria);
+    justify-content:center;
+
+}
